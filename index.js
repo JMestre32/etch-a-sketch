@@ -3,7 +3,7 @@
 const container = document.querySelector("#container");
 
 const grid = document.createElement("div");
-grid.classList.add("grid");
+grid.setAttribute("style", "display: Flex; justify-content: center;")
 grid.textContent = "This is text";
 
 container.appendChild(grid)
