@@ -1,12 +1,7 @@
 // Create a webpage with a 16x16 grid of square divs
 
 const container = document.querySelector("#container");
-
-const grid = document.createElement("div");
-grid.setAttribute("style", "display: Flex; justify-content: center;")
-grid.textContent = "This is text";
-
-container.appendChild(grid)
+container.setAttribute("style", "display: flex; justify-content: center; align-items: center")
 
 
 // Use JS to create the divs, don't create them by hand in HTML
