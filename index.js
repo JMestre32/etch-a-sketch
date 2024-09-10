@@ -3,7 +3,15 @@
 const container = document.querySelector("#container");
 container.setAttribute("style", "display: flex; justify-content: center; align-items: center")
 
+const cell = document.createElement("div");
+cell.classList.add("gridItem");
+cell.setAttribute("style", "display: flex; flex-wrap: wrap; border: solid pink; gap: 10px; height: 25%; width: 25%;")
 
+const grid = document.querySelector(".grid");
+
+for (let i = 0; i < 4; i++){
+        grid.append(cell.cloneNode(true));
+}
 // Use JS to create the divs, don't create them by hand in HTML
 
 // Put your grid squares in a container div, THIS CAN BE WRITTEN IN HTML
