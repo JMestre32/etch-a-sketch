@@ -47,9 +47,9 @@ const resize = document.querySelector(".resize")
 
 resize.addEventListener("click", () => {
         let newSize = 0
-        newSize = prompt("Enter a number (1-100) to resize the canvas: ")
-        while(newSize < 1 || newSize > 100 || isNaN(newSize)){
-                newSize = prompt("Invalid input select a number 1-100: ")
+        newSize = prompt("Enter a whole number (1-100) to resize the canvas: ")
+        while(newSize < 1 || newSize > 100 || isNaN(newSize) || newSize % 1 != 0){
+                newSize = prompt("Invalid input select a whole number 1-100: ")
         }
         makeGrid(newSize);
 })
